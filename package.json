@@ -16,7 +16,7 @@
     "test": "npx ts-node src/index.test.ts"
   },
   "author": "Ghafariz Ainoor Rohan <im@ghafariz.com>",
-  "repository": "ghafarizar/arraypick",
+  "repository": "ghafariz/arraypick",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
