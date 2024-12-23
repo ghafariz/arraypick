@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    /* Language and Standard */
+    "target": "ES2022", // Use the latest ECMAScript features
+    "module": "CommonJS", // Node.js compatibility
+    "lib": ["ESNext"], // Include the latest JavaScript library definitions
+
+    /* Output Configuration */
+    "outDir": "dist", // Directory for compiled files
+    "rootDir": "src", // Root directory for input files
+    "declaration": true, // Generate `.d.ts` files
+    "declarationMap": true, // Generate `.d.ts.map` files for debugging
+    "sourceMap": true, // Generate source maps
+    "removeComments": true, // Remove comments from the output
+
+    /* Type Checking */
+    "strict": true, // Enable all strict type checks
+    "noImplicitAny": true, // Raise errors for implicit `any` types
+    "strictNullChecks": true, // Ensure null/undefined are explicitly handled
+    "strictFunctionTypes": true, // Ensure type safety for function arguments
+    "strictBindCallApply": true, // Ensure type safety for `bind`, `call`, `apply`
+    "noImplicitThis": true, // Raise errors for `this` of type `any`
+    "alwaysStrict": true, // Emit `'use strict'` for modules
+
+    /* Code Quality */
+    "noUnusedLocals": true, // Error on unused local variables
+    "noUnusedParameters": true, // Error on unused function parameters
+    "noImplicitReturns": true, // Ensure all code paths in a function return a value
+    "noFallthroughCasesInSwitch": true, // Error on fallthrough in `switch` statements
+    "allowUnreachableCode": false, // Disallow unreachable code
+
+    /* Module Resolution */
+    "moduleResolution": "node", // Use Node.js module resolution
+    "baseUrl": ".", // Set base directory for resolving paths
+    "paths": {
+      "@/arraypick": ["src/index.ts"] // Add alias for imports
+    },
+    "resolveJsonModule": true, // Allow importing `.json` files
+    "esModuleInterop": true, // Enable interop between CommonJS and ES modules
+    "forceConsistentCasingInFileNames": true, // Ensure consistent file name casing
+
+    /* Experimental Options */
+    "experimentalDecorators": true, // Enable decorators
+    "emitDecoratorMetadata": true, // Emit metadata for decorators
+
+    /* Incremental Builds */
+    "incremental": true, // Enable incremental builds
+    "tsBuildInfoFile": "./tsconfig.tsbuildinfo", // Specify build cache file location
+
+    /* Performance */
+    "skipLibCheck": true, // Skip type checking for library files (for faster builds)
+
+    "inlineSources": true,
+    "strictPropertyInitialization": false,
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "include": ["src/index.ts"], // Include source files
+  "exclude": ["node_modules", "dist", "coverage"] // Exclude unnecessary files
+}

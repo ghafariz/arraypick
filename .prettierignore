@@ -1,0 +1,7 @@
+node_modules/
+
+# Ignore the build output
+dist/
+
+# Ignore generated files, such as those created by TypeScript
+tsconfig.tsbuildinfo

@@ -1,0 +1,46 @@
+{
+  "name": "arraypick",
+  "version": "1.0.0",
+  "description": "A simple library to pick specific elements from an array",
+  "keywords": [
+    "array",
+    "pick",
+    "utility",
+    "filter",
+    "object",
+    "field"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist && rm tsconfig.tsbuildinfo",
+    "build": "npx tsc",
+    "test": "npx ts-node src/index.test.ts"
+  },
+  "author": "Ghafariz Ainoor Rohan <im@ghafariz.com>",
+  "repository": "ghafarizar/arraypick",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "quoteProps": "as-needed",
+    "jsxSingleQuote": false,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "arrowParens": "always",
+    "endOfLine": "lf",
+    "proseWrap": "preserve",
+    "htmlWhitespaceSensitivity": "ignore",
+    "typescript": true
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2"
+  }
+}
